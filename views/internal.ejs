@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/internal.css">
+    <title>Internal Diseases - <%= part %></title>
+</head>
+<body>
+    <header>
+        <h1>Internal Diseases for <%= part %></h1>
+    </header>
+
+    <h1>Diseases Related to <%= part %></h1>
+<ul>
+    <% diseases.forEach(disease => { %>
+        <li><a href="/disease/internal/<%= disease.name.toLowerCase() %>"><%= disease.name %></a></li>
+    <% }); %>
+</ul>
+
+
+    <footer>© 2025 Dr.A3. All rights reserved.</footer>
+</body>
+</html>

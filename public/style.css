@@ -1,0 +1,61 @@
+/* Ensure both html and body take full height */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color:#0056b3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-container {
+    text-align: center;
+}
+
+.container {
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.tooltip {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    display: none;
+    pointer-events: auto; /* Allow mouse events on the tooltip */
+    transform: translate(-50%, -100%);
+    text-align: center;
+    z-index: 10;
+}
+
+.tooltip button {
+    margin-top: 5px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.tooltip button:hover {
+    background-color: #0056b3;
+}
+
+
+

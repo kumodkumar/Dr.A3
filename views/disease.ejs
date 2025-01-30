@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/disease.css">
+    <title><%= disease.name %> - Details</title>
+</head>
+<body>
+    <header>
+        <h1><%= disease.name %></h1>
+    </header>
+
+    
+    <img src="<%= disease.image %>" alt="<%= disease.name %>">
+    <p><strong>Description:</strong> <%= disease.description %></p>
+    <p><strong>Symptoms:</strong> <%= disease.symptoms.join(', ') %></p>
+    <p><strong>Emergency Cure:</strong> <%= disease.emergencyCure %></p>
+    <p><strong>Consult:</strong> <%= disease.doctor %></p>
+    
+
+    <footer>© 2025 Dr.A3. All rights reserved.</footer>
+</body>
+</html>
